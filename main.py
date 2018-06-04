@@ -7,7 +7,7 @@ flags = tf.app.flags
 flags.DEFINE_string('mode', 'train', "'train', or 'test'")
 flags.DEFINE_string('method', 'recon',
                     "the regularizer: 'baseline' (no regularizer), 'd-coral', 'log-d-coral' or 'entropy'")
-flags.DEFINE_string('model_save_path', '/tmp/model', "base directory for saving the models")
+flags.DEFINE_string('model_save_path', 'model', "base directory for saving the models")
 # flags.DEFINE_string('device', '/cpu:0', "/gpu:id number")
 flags.DEFINE_string('device', '/gpu:0', "/gpu:id number")
 flags.DEFINE_string('alpha', '2.0', "coral regularizer weigtht")
@@ -36,7 +36,7 @@ def main(_):
         log_dir = 'logs/' + FLAGS.source+'->'+FLAGS.target+'/'+FLAGS.method + '/alpha_' + FLAGS.alpha+"_beta_"+FLAGS.beta+"_gamma_"+FLAGS.gamma
         model = logDcoral(mode=FLAGS.mode, method=FLAGS.method, hidden_size=64, learning_rate=0.0001,
                           alpha=float(FLAGS.alpha), beta=float(FLAGS.beta),phase=FLAGS.phase,bn=FLAGS.bn, T=FLAGS.T, gamma=float(FLAGS.gamma))
-        solver = Solver(model, batch_size=128, model_save_path=model_save_path, log_dir=log_dir, train_iter=200000, source=FLAGS.source, target=FLAGS.target,reduced=FLAGS.reduce, seed=FLAGS.seed)
+        solver = Solver(model, batch_size=128, model_save_path=model_save_path, log_dir=log_dir, train_iter=20000, source=FLAGS.source, target=FLAGS.target,reduced=FLAGS.reduce, seed=FLAGS.seed)
 
         # create directory if it does not exist
         if not tf.gfile.Exists(model_save_path):

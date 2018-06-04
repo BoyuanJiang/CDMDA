@@ -16,11 +16,11 @@ import gzip
 from skimage.viewer import ImageViewer
 from sklearn.utils import shuffle
 
-svhn_dir = '/tmp/data/svhn'
-mnist_dir = '/tmp/data/mnist'
-usps_dir = '/tmp/data/usps'
-mnist_m_dir = '/tmp/data/mnist-m'
-svn_dir = '/tmp/data/SynthDigits'
+svhn_dir = 'data/svhn'
+mnist_dir = 'data/mnist'
+usps_dir = 'data/usps'
+mnist_m_dir = 'data/mnist-m'
+svn_dir = 'data/SynthDigits'
 
 
 # ~ from utils import resize_images
