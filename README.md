@@ -14,7 +14,7 @@ python main.py --mode 'train' --method 'recon' --source 'svhn' --target 'mnist'
 Test the model on testset
 
 ```bash
-python main.py --mode 'train' --method 'recon' --source 'svhn' --target 'mnist' --device '/cpu:0'
+python main.py --mode 'test' --method 'recon' --source 'svhn' --target 'mnist' --device '/cpu:0'
 ```
 
 # Thanks 
