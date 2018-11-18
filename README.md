@@ -1,6 +1,6 @@
 # Unsupervised domain adaptation with target reconstruction and label confusion in the common subspace
 
-This repository contains experiments code of our paper **Unsupervised domain adaptation with target reconstruction and label confusion in the common subspace**.
+This repository contains experiments code of our paper [**Unsupervised domain adaptation with target reconstruction and label confusion in the common subspace**](http://link.springer.com/article/10.1007/s00521-018-3846-x).
 
 # How to run
 First download the dataset from [MEGA](https://mega.nz/#!4eRWVCKL!sMuftfE6cRkZZdePrFoGynpevRUnpYT1MRwT0gQpx3s), then extract files to *data* folder.
