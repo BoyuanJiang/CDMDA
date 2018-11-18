@@ -20,3 +20,19 @@ python main.py --mode 'test' --method 'recon' --source 'svhn' --target 'mnist' -
 # Thanks 
 This code based on this [repository](https://github.com/pmorerio/minimal-entropy-correlation-alignment), thanks for the authors.
 
+# Citation
+```
+@Article{Jiang2018,
+         author="Jiang, Boyuan
+         and Chen, Chao
+         and Jin, Xinyu",
+         title="Unsupervised domain adaptation with target reconstruction and label confusion in the common subspace",
+         journal="Neural Computing and Applications",
+         year="2018",
+         month="Nov",
+         day="15",
+         issn="1433-3058",
+         doi="10.1007/s00521-018-3846-x",
+         url="https://doi.org/10.1007/s00521-018-3846-x"
+}
+```
